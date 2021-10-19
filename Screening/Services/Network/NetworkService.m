@@ -35,6 +35,7 @@
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: url];
     NSString * postDataString = [NSString stringWithFormat:@"seconds=%@", seconds];
     [request setHTTPMethod:@"POST"];
+    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     [request setHTTPBody:[postDataString dataUsingEncoding:NSUTF8StringEncoding]];
     
     NSURLSessionTask * task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {

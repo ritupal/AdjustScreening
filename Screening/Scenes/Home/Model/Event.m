@@ -8,7 +8,7 @@
 #import "Event.h"
 
 @implementation Event
-- (instancetype)initWithId:(NSInteger)eventId seconds:(NSString*)seconds
+- (instancetype)initWithId:(NSString *)eventId seconds:(NSString*)seconds
 {
     self = [super init];
     if (self) {

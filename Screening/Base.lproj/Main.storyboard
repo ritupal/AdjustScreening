@@ -13,15 +13,15 @@
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrN-MX-cWw">
-                                <rect key="frame" x="162" y="430" width="90" height="36"/>
+                                <rect key="frame" x="157" y="386" width="100" height="36"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="B4T-97-Dma"/>
-                                    <constraint firstAttribute="width" constant="90" id="yeU-71-exe"/>
+                                    <constraint firstAttribute="width" constant="100" id="yeU-71-exe"/>
                                 </constraints>
                                 <state key="normal" title="Post Event">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -52,7 +52,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dXG-3C-pwB" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="V6a-m2-6w0">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="V6a-m2-6w0">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

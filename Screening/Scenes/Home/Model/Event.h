@@ -10,10 +10,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Event : NSObject
-@property (nonatomic, assign) NSInteger eventId;
+@property (nonatomic, assign) NSString * eventId;
 @property (nonatomic, strong) NSString * seconds;
 
-- (instancetype)initWithId:(NSInteger)eventId seconds:(NSString*)seconds;
+- (instancetype)initWithId:(NSString *)eventId seconds:(NSString*)seconds;
 
 @end
 
