@@ -16,6 +16,8 @@
 		A0331701271E94580013E409 /* ScreeningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0331700271E94580013E409 /* ScreeningTests.m */; };
 		A033170C271E94580013E409 /* ScreeningUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A033170B271E94580013E409 /* ScreeningUITests.m */; };
 		A033171E271E979C0013E409 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A033171D271E979C0013E409 /* HomeViewController.m */; };
+		A0386AF7271EDB1F008BFBC5 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = A0386AF6271EDB1F008BFBC5 /* Event.m */; };
+		A0386AFD271EDC33008BFBC5 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = A0386AFC271EDC33008BFBC5 /* NetworkService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,11 @@
 		A033170D271E94580013E409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A033171C271E979C0013E409 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		A033171D271E979C0013E409 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A0386AF5271EDB1F008BFBC5 /* Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		A0386AF6271EDB1F008BFBC5 /* Event.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		A0386AFA271EDC32008BFBC5 /* NetworkServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkServiceProtocol.h; sourceTree = "<group>"; };
+		A0386AFB271EDC33008BFBC5 /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
+		A0386AFC271EDC33008BFBC5 /* NetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +111,7 @@
 		A03316E3271E94570013E409 /* Screening */ = {
 			isa = PBXGroup;
 			children = (
+				A0386AF8271EDC02008BFBC5 /* Network */,
 				A033171A271E976F0013E409 /* Application Delegate */,
 				A0331719271E975E0013E409 /* Scenes */,
 				A03316ED271E94570013E409 /* Main.storyboard */,
@@ -155,10 +163,46 @@
 		A033171B271E97940013E409 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A0386AF9271EDC0F008BFBC5 /* View Model */,
+				A0386AF4271EDB02008BFBC5 /* Controller */,
+				A0386AF3271EDB02008BFBC5 /* Model */,
 				A033171C271E979C0013E409 /* HomeViewController.h */,
 				A033171D271E979C0013E409 /* HomeViewController.m */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		A0386AF3271EDB02008BFBC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0386AF5271EDB1F008BFBC5 /* Event.h */,
+				A0386AF6271EDB1F008BFBC5 /* Event.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0386AF4271EDB02008BFBC5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A0386AF8271EDC02008BFBC5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A0386AFB271EDC33008BFBC5 /* NetworkService.h */,
+				A0386AFC271EDC33008BFBC5 /* NetworkService.m */,
+				A0386AFA271EDC32008BFBC5 /* NetworkServiceProtocol.h */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A0386AF9271EDC0F008BFBC5 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +336,9 @@
 			files = (
 				A03316E6271E94570013E409 /* AppDelegate.m in Sources */,
 				A03316F7271E94580013E409 /* main.m in Sources */,
+				A0386AF7271EDB1F008BFBC5 /* Event.m in Sources */,
 				A03316E9271E94570013E409 /* SceneDelegate.m in Sources */,
+				A0386AFD271EDC33008BFBC5 /* NetworkService.m in Sources */,
 				A033171E271E979C0013E409 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
