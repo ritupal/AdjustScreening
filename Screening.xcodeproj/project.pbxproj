@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A013E10F271FDEDF00FB7185 /* EventViewModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A013E10E271FDEDF00FB7185 /* EventViewModelTest.m */; };
 		A03316E6271E94570013E409 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A03316E5271E94570013E409 /* AppDelegate.m */; };
 		A03316E9271E94570013E409 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A03316E8271E94570013E409 /* SceneDelegate.m */; };
 		A03316EF271E94570013E409 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03316ED271E94570013E409 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A013E10E271FDEDF00FB7185 /* EventViewModelTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventViewModelTest.m; sourceTree = "<group>"; };
 		A03316E1271E94570013E409 /* Screening.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Screening.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03316E4271E94570013E409 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A03316E5271E94570013E409 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				A0331700271E94580013E409 /* ScreeningTests.m */,
 				A0331702271E94580013E409 /* Info.plist */,
+				A013E10E271FDEDF00FB7185 /* EventViewModelTest.m */,
 			);
 			path = ScreeningTests;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0331701271E94580013E409 /* ScreeningTests.m in Sources */,
+				A013E10F271FDEDF00FB7185 /* EventViewModelTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
