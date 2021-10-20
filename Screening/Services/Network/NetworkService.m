@@ -26,6 +26,8 @@
 
 - (void)postEventWithUrl:(NSURL *)url withSeconds: (NSString *)seconds withSuccess:(void (^)(NSData *))successCompletion error:(void (^)(NSError *))errorCompletion {
     
+    //semaphore for synchronous request
+    dispatch_semaphore_t sem;
     NSURLSessionTask * previousTask = [self.tasks objectForKey:url.absoluteString];
     if (previousTask){
         [previousTask cancel];
@@ -37,8 +39,12 @@
     [request setHTTPMethod:@"POST"];
     [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     [request setHTTPBody:[postDataString dataUsingEncoding:NSUTF8StringEncoding]];
-    
+    //create semaphore
+    sem = dispatch_semaphore_create(0);
     NSURLSessionTask * task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        //call semaphore
+        dispatch_semaphore_signal(sem);
         
         if (error) {
             errorCompletion(error);
@@ -54,6 +60,9 @@
     }];
     
     [task resume];
+    //resume synchronous from here
+    dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
+    
     [self.tasks setObject:task forKey:url.absoluteString];
 }
 
