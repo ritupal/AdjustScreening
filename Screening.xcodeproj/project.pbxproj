@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A013E10F271FDEDF00FB7185 /* EventViewModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A013E10E271FDEDF00FB7185 /* EventViewModelTest.m */; };
 		A03316E6271E94570013E409 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A03316E5271E94570013E409 /* AppDelegate.m */; };
 		A03316E9271E94570013E409 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A03316E8271E94570013E409 /* SceneDelegate.m */; };
 		A03316EF271E94570013E409 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03316ED271E94570013E409 /* Main.storyboard */; };
@@ -16,6 +17,12 @@
 		A0331701271E94580013E409 /* ScreeningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0331700271E94580013E409 /* ScreeningTests.m */; };
 		A033170C271E94580013E409 /* ScreeningUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A033170B271E94580013E409 /* ScreeningUITests.m */; };
 		A033171E271E979C0013E409 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A033171D271E979C0013E409 /* HomeViewController.m */; };
+		A0386AF7271EDB1F008BFBC5 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = A0386AF6271EDB1F008BFBC5 /* Event.m */; };
+		A0386AFD271EDC33008BFBC5 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = A0386AFC271EDC33008BFBC5 /* NetworkService.m */; };
+		A0386B00271EE032008BFBC5 /* EventViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0386AFF271EE032008BFBC5 /* EventViewModel.m */; };
+		A0386B04271EE21B008BFBC5 /* EventFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A0386B03271EE21B008BFBC5 /* EventFetcher.m */; };
+		A0386B07271EE236008BFBC5 /* EventParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A0386B06271EE236008BFBC5 /* EventParser.m */; };
+		A0386B0F271EE620008BFBC5 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A0386B0E271EE620008BFBC5 /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A013E10E271FDEDF00FB7185 /* EventViewModelTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventViewModelTest.m; sourceTree = "<group>"; };
 		A03316E1271E94570013E409 /* Screening.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Screening.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03316E4271E94570013E409 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A03316E5271E94570013E409 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +62,20 @@
 		A033170D271E94580013E409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A033171C271E979C0013E409 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		A033171D271E979C0013E409 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A0386AF5271EDB1F008BFBC5 /* Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		A0386AF6271EDB1F008BFBC5 /* Event.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		A0386AFA271EDC32008BFBC5 /* NetworkServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkServiceProtocol.h; sourceTree = "<group>"; };
+		A0386AFB271EDC33008BFBC5 /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
+		A0386AFC271EDC33008BFBC5 /* NetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
+		A0386AFE271EE032008BFBC5 /* EventViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventViewModel.h; sourceTree = "<group>"; };
+		A0386AFF271EE032008BFBC5 /* EventViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventViewModel.m; sourceTree = "<group>"; };
+		A0386B02271EE21B008BFBC5 /* EventFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventFetcher.h; sourceTree = "<group>"; };
+		A0386B03271EE21B008BFBC5 /* EventFetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventFetcher.m; sourceTree = "<group>"; };
+		A0386B05271EE236008BFBC5 /* EventParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventParser.h; sourceTree = "<group>"; };
+		A0386B06271EE236008BFBC5 /* EventParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventParser.m; sourceTree = "<group>"; };
+		A0386B08271EE2CB008BFBC5 /* EventFetcherProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventFetcherProtocol.h; sourceTree = "<group>"; };
+		A0386B0D271EE620008BFBC5 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		A0386B0E271EE620008BFBC5 /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +126,8 @@
 		A03316E3271E94570013E409 /* Screening */ = {
 			isa = PBXGroup;
 			children = (
+				A0386B09271EE47E008BFBC5 /* Utils */,
+				A0386B01271EE1F4008BFBC5 /* Services */,
 				A033171A271E976F0013E409 /* Application Delegate */,
 				A0331719271E975E0013E409 /* Scenes */,
 				A03316ED271E94570013E409 /* Main.storyboard */,
@@ -120,6 +144,7 @@
 			children = (
 				A0331700271E94580013E409 /* ScreeningTests.m */,
 				A0331702271E94580013E409 /* Info.plist */,
+				A013E10E271FDEDF00FB7185 /* EventViewModelTest.m */,
 			);
 			path = ScreeningTests;
 			sourceTree = "<group>";
@@ -155,10 +180,70 @@
 		A033171B271E97940013E409 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A0386AF9271EDC0F008BFBC5 /* View Model */,
+				A0386AF4271EDB02008BFBC5 /* Controller */,
+				A0386AF3271EDB02008BFBC5 /* Model */,
 				A033171C271E979C0013E409 /* HomeViewController.h */,
 				A033171D271E979C0013E409 /* HomeViewController.m */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		A0386AF3271EDB02008BFBC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0386AF5271EDB1F008BFBC5 /* Event.h */,
+				A0386AF6271EDB1F008BFBC5 /* Event.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0386AF4271EDB02008BFBC5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A0386AF8271EDC02008BFBC5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A0386AFB271EDC33008BFBC5 /* NetworkService.h */,
+				A0386AFC271EDC33008BFBC5 /* NetworkService.m */,
+				A0386AFA271EDC32008BFBC5 /* NetworkServiceProtocol.h */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A0386AF9271EDC0F008BFBC5 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0386AFE271EE032008BFBC5 /* EventViewModel.h */,
+				A0386AFF271EE032008BFBC5 /* EventViewModel.m */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		A0386B01271EE1F4008BFBC5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A0386AF8271EDC02008BFBC5 /* Network */,
+				A0386B02271EE21B008BFBC5 /* EventFetcher.h */,
+				A0386B03271EE21B008BFBC5 /* EventFetcher.m */,
+				A0386B05271EE236008BFBC5 /* EventParser.h */,
+				A0386B06271EE236008BFBC5 /* EventParser.m */,
+				A0386B08271EE2CB008BFBC5 /* EventFetcherProtocol.h */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A0386B09271EE47E008BFBC5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A0386B0D271EE620008BFBC5 /* Constants.h */,
+				A0386B0E271EE620008BFBC5 /* Constants.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,9 +375,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0386B00271EE032008BFBC5 /* EventViewModel.m in Sources */,
 				A03316E6271E94570013E409 /* AppDelegate.m in Sources */,
 				A03316F7271E94580013E409 /* main.m in Sources */,
+				A0386AF7271EDB1F008BFBC5 /* Event.m in Sources */,
+				A0386B04271EE21B008BFBC5 /* EventFetcher.m in Sources */,
+				A0386B0F271EE620008BFBC5 /* Constants.m in Sources */,
 				A03316E9271E94570013E409 /* SceneDelegate.m in Sources */,
+				A0386B07271EE236008BFBC5 /* EventParser.m in Sources */,
+				A0386AFD271EDC33008BFBC5 /* NetworkService.m in Sources */,
 				A033171E271E979C0013E409 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0331701271E94580013E409 /* ScreeningTests.m in Sources */,
+				A013E10F271FDEDF00FB7185 /* EventViewModelTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,15 +1,16 @@
 //
-//  HomeViewController.h
+//  Constants.h
 //  Screening
 //
 //  Created by Kumari Ritu Pal on 19/10/21.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomeViewController : UIViewController
+@interface Constants : NSObject
+extern NSString * const kBaseUrl;
 @end
 
 NS_ASSUME_NONNULL_END
