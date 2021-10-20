@@ -6,7 +6,7 @@
 //
 
 #import "EventViewModel.h"
-
+#import <UIKit/UIKit.h>
 #import "EventParser.h"
 #import "EventFetcher.h"
 #import "NetworkService.h"
